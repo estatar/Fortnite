@@ -2,8 +2,8 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToTips = () => {
-    const element = document.getElementById('tips');
+  const scrollToEvents = () => {
+    const element = document.getElementById('events');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -31,7 +31,7 @@ const HeroSection = () => {
         </p>
         
         <button
-          onClick={scrollToTips}
+          onClick={scrollToEvents}
           className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50 hover:scale-105 animate-bounce-gentle"
         >
           <span className="relative z-10">Los geht's!</span>
